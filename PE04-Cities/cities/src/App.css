@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  background-color: #15191d;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.app-title {
+  margin: 0;
+}
+
+.app-nav {
+  text-align: center;
+  margin: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 20px;
+  color: white;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.nav-item a.active {
+  border-bottom: 2px solid #007bff;
+}
+
+.app-content {
+  max-width: 800px;
+  margin: 20px auto;
+}

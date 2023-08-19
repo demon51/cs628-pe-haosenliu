@@ -1,0 +1,37 @@
+.city-details-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .city-details-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #282c34;
+  }
+  
+  .city-details-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .city-details-label {
+    width: 100px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .city-details-value {
+    color: #007bff;
+  }
+  
+  .city-details-error {
+    color: #dc3545;
+    font-size: 1.2rem;
+  }
+  
