@@ -7,11 +7,11 @@ import './App.css';
 
 function App() {
   const [cities, setCities] = useState([
-    { id: 1, name: 'Mumbai', country: 'India', population: 36400068 },
-    { id: 2, name: 'Delhi', country: 'India', population: 30771000 },
-    { id: 3, name: 'Pune', country: 'India', population: 21516000 },
-    { id: 4, name: 'Nagpur', country: 'India', population: 17125000 },
-    { id: 5, name: 'Karnataka', country: 'India', population: 11893000 }
+    { id: 1, name: 'Shanghai', country: 'China', population: 24281400 },
+    { id: 2, name: 'Beijing', country: 'China', population: 18650000 },
+    { id: 3, name: 'Shenzhen', country: 'China', population: 13438800 },
+    { id: 4, name: 'Tianjin', country: 'China', population: 13038400 },
+    { id: 5, name: 'Harbin', country: 'China', population: 4151800 }
   ]);
 
   const handleAddCity = (newCity) => {

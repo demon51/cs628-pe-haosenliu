@@ -1,70 +1,11 @@
-# Getting Started with Create React App
+## Input
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The React application "Cities" accepts multiple types of user inputs. The first type of input is through the "Add City" page where users can enter details about a city, including its name, country, and population. These inputs are collected through form elements in the "AddCity" component. The second type of input is from clicking on city names in the "Cities List" page, which leads to the "City Details" page. The click event acts as an input triggering the display of city details.
 
-## Available Scripts
+## Process
 
-In the project directory, you can run:
+The main process of the application happens in the "App.js" file. The state of the application, represented by the `cities` variable, is managed here. When a user adds a new city, the `handleAddCity` function updates the `cities` state with the new city's details. The `BrowserRouter` component provides routing functionality, allowing navigation between different pages (routes) in the application. Based on the user's actions (input), the corresponding route and component are rendered. For example, clicking on a city name triggers the display of that city's details by processing the `id` parameter in the URL and finding the corresponding city from the `cities` state.
 
-### `npm start`
+## Output
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The output of the application consists of the various pages that are displayed to the user. The "Cities List" page shows a list of city names, which are links to the "City Details" pages. Clicking on a city name displays the details of that city in the "City Details" page. When a user adds a new city through the "Add City" page, the new city gets added to the "Cities List" page. All the outputs are presented through React components that render the necessary HTML elements to display the data in a user-friendly and visually appealing format. The dynamic rendering of components based on user input and application state showcases the program's input-process-output flow.
